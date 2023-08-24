@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="assets/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="css/owfont-regular.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>momentum</title>
+</head>
+
+<body id="body">
+	<header class="header">
+		<div class="player">
+			<div class="player-controls">
+				<button class="play-prev player-icon"></button>
+				<button class="play player-icon"></button>
+				<button class="play-next player-icon"></button>
+			</div>
+			<div class="container__player">
+				<p class="track">track wilf</p>
+			</div>
+			<input class="progress" type="range" min="0" max="100" value="0" id="progress-audio">
+			<div class="container-time">
+				<div class="current-time">0:00</div>
+				<div class="duration-time">0:00</div>
+			</div>
+
+			<div class="container-svuk">
+				<input class="zvuk" type="range" min="0" max="100" value="10">
+				<div class="volume-percentage"></div>
+			</div>
+			<ul class="play-list">
+			</ul>
+		</div>
+		<div class="weather">
+			<input type="text" class="city" />
+			<i class="weather-icon owf"></i>
+			<div class="weather-error"></div>
+			<div class="description-container">
+				<span class="temperature"></span>
+				<span class="weather-description">clear sky</span>
+			</div>
+			<div class="wind"></div>
+			<div class="humidity"></div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="slider-icons">
+			<button class="slide-prev slider-icon"></button>
+			<button class="slide-next slider-icon"></button>
+		</div>
+		<time class="time"></time>
+		<date class="date"></date>
+		<div class="greeting-container">
+			<span class="greeting"></span>
+			<input type="text" class="name" />
+		</div>
+	</main>
+	<form <footer class="footer">
+		<button class="change-quote"></button>
+		<div>
+			<div class="quote"></div>
+			<div class="author"></div>
+		</div>
+		</footer>
+		<script type="module" src="js/index.js"></script>
+</body>
+
+</html>
